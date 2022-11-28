@@ -48,6 +48,27 @@
  
  </head>
  
+ <style>
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute; /*  relative */
+        background-color: #f9f9f9;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 8px 16px;
+        z-index: 1;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
+
+    
  <body id="home">
  
      <!-- Preloader -->
@@ -70,7 +91,7 @@
          <!-- /.container -->
          <div class="col-xs-12 text-center abcen wow fadeIn">
              <div class="button_down "> 
-                 <a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#whatis"> <img class="img_scroll" src="img/icon/circle.png" alt=""> </a>
+                 <a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#concept"> <img class="img_scroll" src="img/icon/circle.png" alt=""> </a>
              </div>
          </div>
      </div>
@@ -91,18 +112,169 @@
              <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
                  <ul class="nav navbar-nav">
                      
-                     <li class="menuItem"><a href="#whatis">Mission</a></li>
-                     <li class="menuItem"><a href="#useit">Research</a></li>
-                     <li class="menuItem"><a href="#screen">Certificates</a></li>
-                     <li class="menuItem"><a href="#credits">Credits</a></li>
-                     <li class="menuItem"><a href="#contact">Contact</a></li>
+                    <li class="dropdown"><a href="#concept">Concept</a>
+                        <div class="dropdown-content">
+                            <p><a href="project_1.html">Project 1</a></p>
+                            <p><a href="project_2.html">Project 2</a></p>
+                            <p><a href="project_3.html">Project 3</a></p>
+                        </div>
+                    </li>
+
+                    <li class="dropdown"><a href="#implementation">Implementation</a>
+                        <div class="dropdown-content">
+                            <p><a href="project_4.html">Project 4</a></p>
+                            <p><a href="project_5.html">Project 5</a></p>
+                            <p><a href="project_6.html">Project 6</a></p>
+                            <p><a href="project_7.html">Project 7</a></p>
+                        </div>
+                    </li>
+
+                    <li class="dropdown"><a href="#evaluation">Evaluation</a>
+                        <div class="dropdown-content">
+                            <p><a href="project_8.html">Project 8</a></p>
+                        </div>
+                    </li>
+
                  </ul>
              </div>
             
          </div>
      </nav> 
      
-     <!-- What is -->
+
+      <!-- Part 1 -->
+      <div id="concept" class="content-section-b" style="border-top: 0">
+        <div class="container">
+
+            <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+                <h2>Concept</h2>
+                <p class="lead" style="margin-top:0">Brain and Cognitive Science</p>
+                
+            </div>
+            
+            <div class="row">
+            
+                <div class="col-sm-4 wow fadeInDown text-center">
+                  <img class="rotate" src="Figures/icon1.png" alt="Fig1-1" width="100" height="100">
+                  <h3 ><a href="project_1.html">Project 1</a></h3>
+                  <p class="lead">The mediation of sensory prediction through dual-stream cortical feedbacks </p>
+
+                  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+                </div><!-- /.col-lg-4 -->
+                
+                <div class="col-sm-4 wow fadeInDown text-center">
+                  <img  class="rotate" src="img/icon/picture.svg" alt="Generic placeholder image">
+                   <h3><a href="project_2.html">Project 2</a></h3>
+                   <p class="lead">Comparable semantic representation in neural and computer systems </p>
+                   <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+                </div><!-- /.col-lg-4 -->
+                
+                <div class="col-sm-4 wow fadeInDown text-center">
+                  <img  class="rotate" src="img/icon/retina.svg" alt="Generic placeholder image">
+                  <h3><a href="project_3.html">Project 3</a></h3>
+                    <p class="lead">Psychological processing of the feeling of being moved from art </p>
+                  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+                </div><!-- /.col-lg-4 -->
+                  
+            </div><!-- /.row -->
+        </div>
+    </div>
+
+    <!-- Part 2 -->
+      <div id="implementation" class="content-section-b" style="border-top: 0">
+        <div class="container">
+
+            <div class="col-md-7 col-md-offset-3 text-center wrap_title">
+                <h2>Implementation</h2>
+                <p class="lead" style="margin-top:0">Design for Emotional Well-being</p>
+                
+            </div>
+            
+            <div class="row">
+            
+                <div class="col-sm-3 wow fadeInDown text-center">
+                  <img class="rotate" src="Figures/icon1.png" alt="Fig1-1" width="100" height="100">
+                  <h3 ><a href="project_4.html">Project 4</a></h3>
+                  <p class="lead">VR-based Neurofeedback  for positive group psychotherapy in the natural space </p>
+
+                  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+                </div><!-- /.col-lg-4 -->
+                
+                <div class="col-sm-3 wow fadeInDown text-center">
+                  <img  class="rotate" src="img/icon/picture.svg" alt="Generic placeholder image">
+                   <h3><a href="project_5.html">Project 5</a></h3>
+                   <p class="lead">The Flower of Brain: EEG Visualization of psychological flow</p>
+                   <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+                </div><!-- /.col-lg-4 -->
+                
+                <div class="col-sm-3 wow fadeInDown text-center">
+                  <img  class="rotate" src="img/icon/retina.svg" alt="Generic placeholder image">
+                  <h3><a href="project_6.html">Project 6</a></h3>
+                    <p class="lead">The Flower of Brain: EEG Visualization of psychological flow </p>
+                  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+                </div><!-- /.col-lg-4 -->
+                
+                <div class="col-sm-3 wow fadeInDown text-center">
+                    <img  class="rotate" src="img/icon/retina.svg" alt="Generic placeholder image">
+                    <h3><a href="project_7.html">Project 7</a></h3>
+                      <p class="lead">The Flower of Brain: EEG Visualization of psychological flow </p>
+                    <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+                </div><!-- /.col-lg-4 -->
+
+            </div><!-- /.row -->
+        </div>
+    </div>
+
+    <!-- Part 2 -->
+    <div id="implementation" class="content-section-b" style="border-top: 0">
+        <div class="container">
+
+            <div class="col-md-7 col-md-offset-3 text-center wrap_title">
+                <h2>Implementation</h2>
+                <p class="lead" style="margin-top:0">Design for Emotional Well-being</p>
+                
+            </div>
+            
+            <div class="row">
+            
+                <div class="col-sm-3 wow fadeInDown text-center">
+                  <img class="rotate" src="Figures/icon1.png" alt="Fig1-1" width="100" height="100">
+                  <h3 ><a href="project_4.html">Project 4</a></h3>
+                  <p class="lead">VR-based Neurofeedback  for positive group psychotherapy in the natural space </p>
+
+                  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+                </div><!-- /.col-lg-4 -->
+                
+                <div class="col-sm-3 wow fadeInDown text-center">
+                  <img  class="rotate" src="img/icon/picture.svg" alt="Generic placeholder image">
+                   <h3><a href="project_5.html">Project 5</a></h3>
+                   <p class="lead">The Flower of Brain: EEG Visualization of psychological flow</p>
+                   <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+                </div><!-- /.col-lg-4 -->
+                
+                <div class="col-sm-3 wow fadeInDown text-center">
+                  <img  class="rotate" src="img/icon/retina.svg" alt="Generic placeholder image">
+                  <h3><a href="project_6.html">Project 6</a></h3>
+                    <p class="lead">The Flower of Brain: EEG Visualization of psychological flow </p>
+                  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+                </div><!-- /.col-lg-4 -->
+                
+                <div class="col-sm-3 wow fadeInDown text-center">
+                    <img  class="rotate" src="img/icon/retina.svg" alt="Generic placeholder image">
+                    <h3><a href="project_7.html">Project 7</a></h3>
+                      <p class="lead">The Flower of Brain: EEG Visualization of psychological flow </p>
+                    <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+                </div><!-- /.col-lg-4 -->
+
+            </div><!-- /.row -->
+        </div>
+    </div>
+
+
+        
+    </div>
+
+     <!-- Mission -->
      <div id="whatis" class="content-section-b" style="border-top: 0">
          <div class="container">
  
@@ -116,7 +288,7 @@
              
                  <div class="col-sm-4 wow fadeInDown text-center">
                    <img class="rotate" src="img/icon/tweet.svg" alt="Generic placeholder image">
-                   <h3>Cutting-Edge Education Principles</h3>
+                   <h3 ><a href="project_1.html">Cutting-Edge Education Principles</a></h3>
                    <p class="lead">All-Rounded Knowledge Construction;
                     Character & Competency Cultivation;                    
                     21 Century Transferable Skills Building;                    
@@ -173,337 +345,6 @@
          </div>
      </div>
      
-     <!-- Use it -->
-     <div id ="useit" class="content-section-a">
- 
-         <div class="container">
-             
-             <div class="row">
-             
-                <div class="col-sm-6 wow fadeInLeftBig">
-                    <div id="owl-demo-1" class="owl-carousel">
-                       <a href="Figures/Research1.webp" class="image-link">
-                           <div class="item">
-                               <img  class="img-responsive img-rounded" src="Figures/Research1.webp" alt="">
-                           </div>
-                       </a>
-                       <a href="Figures/Research1.webp" class="image-link">
-                           <div class="item">
-                               <img  class="img-responsive img-rounded" src="Figures/Research1.webp" alt="">
-                           </div>
-                       </a>
-                   </div>       
-               </div>
-                 
-                 <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
-                     <h3 class="section-heading">The Mediation of Sensory Prediction through Dual-stream Cortical Feedbacks</h3>
-                     <div class="sub-title lead3">Project Description</div>
-                     <p class="lead">
-                        Predictions are constantly generated from diverse sources to optimize cognitive functions in the ever-changing environment. 
-                        However, the neural origin and generation process of top-down induced prediction remain elusive. 
-                        We hypothesized that motor-based and memory-based predictions are mediated by distinct feedback networks from motor and memory systems to the sensory cortices.
-                     </p>
-
-                     <div class="sub-title lead3">My Contribution</div>
-                     <p class="lead">
-                        1. Read review articles to understand one machine learning technique in cognitive neuroscience: multi-voxel pattern analysis(MVPA) and multivariate cross-classification(MVCC)<br>
-                        2. Investigated the general structure, analysis stream, and a typical searchlight decoding of The Decoding Toolbox (TDT) for MVPA<br>
-                        3. Wrote MATLAB codes to perform a leave-one-run-out cross-validated searchlight MVPA, including: 
-                           extraction of parameter estimates (“betas”) from a sphere of voxels with a certain center; 
-                           partitioning of the data for training and test; classification using support vector machine (SVM); 
-                           accuracy calculation of classifying test data in sphere. 
-                     </p>
-
-                     <div class="sub-title lead3">My Skills</div>
-                     <p class="lead">
-                        fMRI data analysis, machine learning, MATLAB coding
-                     </p>
-
-                     <div class="sub-title lead3">Collaborator</div>
-                     <p class="lead">
-                        Qian Chu, Xing Tian
-                     </p>
- 
-                      <p><a class="btn btn-embossed btn-primary" href="#" role="button">View Details</a> 
-                      <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p>
-                 </div>   
-             </div>
-         </div>
-         <!-- /.container -->
-     </div>
- 
-     <div class="content-section-b"> 
-         
-         <div class="container">
-             <div class="row">
-                 <div class="col-sm-6 wow fadeInLeftBig">
-                      <div id="owl-demo-1" class="owl-carousel">
-                         <a href="Figures/Research2.webp" class="image-link">
-                             <div class="item">
-                                 <img  class="img-responsive img-rounded" src="Figures/Research2.webp" alt="">
-                             </div>
-                         </a>
-                     </div>       
-                 </div>
-                 
-                 <div class="col-sm-6 wow fadeInRightBig"  data-animation-delay="200">   
-                     <h3 class="section-heading">Comparable Semantic Representation in Neural and Computer Systems</h3>
-                     <div class="sub-title lead3">Project Description</div>
-                     <p class="lead">
-                        Semantic representation has been studied independently in neuroscience and computer science. 
-                        A deep understanding of human neural computations and the revolution to strong artificial intelligence appeal for a joint force in the language domain. 
-                        We investigated comparable representational formats of lexical semantics between these two complex systems with fine temporal resolution neural recordings.
-                     </p>
-
-                     <div class="sub-title lead3">My Contribution</div>
-                     <p class="lead">
-                        1. Recruited participants and trained junior students on study procedures <br>
-                        2. Preprocessed raw EEG data: artifact rejection and correction; averaging; filtering <br>
-                        3. Analyzed preprocessed data to detect amplitude and latency of ERP waves, GFP, and topography <br>
-                        4. Created word stimulus set by filtering out true words from English Lexicon Project and selecting non-words from Wuggy database <br>
-                        5. Revised Python codes to present  new experimental paradigms and to include triggers(event codes)  <br>
-                        6. Redesigned Python programs to include event codes (triggers) <br>
-                        7. Wrote Python programs to analyze cosine similarity between two words using Glove models 
-                     </p>
-
-                     <div class="sub-title lead3">My Skills</div>
-                     <p class="lead">
-                        Psycholinguistics, EEG data collection and analysis, Natural Language Processing, Python
-                     </p>
-
-                     <div class="sub-title lead3">Collaborator</div>
-                     <p class="lead">
-                        Xing Tian, Linting Wang, Linmin Zhang, Xuefei Wang
-                     </p>
-                      <p><a class="btn btn-embossed btn-primary" href="#" role="button">View Details</a> 
-                      <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p>
-                 </div>  			
-             </div>
-         </div>
-     </div>
-     
-     <div id ="useit" class="content-section-a">
- 
-        <div class="container">
-            
-            <div class="row">
-            
-                <div class="col-sm-6 pull-right wow fadeInRightBig">
-                    <img class="img-responsive " src="Figures/Research3.webp" alt="">
-                </div>
-                
-                <div class="col-sm-6 pull-right wow fadeInRightBig">
-                    <img class="img-responsive " src="Figures/Research32.webp" alt="">
-                </div>
-
-                <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
-                    <h3 class="section-heading">Psychological Processing of the Feeling of being Moved from Art</h3>
-                    <div class="sub-title lead3">Project Description</div>
-                    <p class="lead">
-                        It has recently been claimed by neuroscientists that intense aesthetic experiences involve introspection. 
-                        Since this claim is based on only indirect evidence, here we provide a direct test of the aesthetic experience-introspection hypothesis. 
-                        We investigated how the feeling of being moved from art is influenced by or correlated with the mental processes of introspection.
-                    </p>
-
-                    <div class="sub-title lead3">My Contribution</div>
-                    <p class="lead">
-                        1. Wrote research proposal to clarify research background, research purpose, construct experimental design and establish research hypothesis <br>
-                        2. Adjusted requirements for the type of paintings selected for research by doing pilot study <br>
-                        3. Selected paintings as the psychological stimuli that fulfill the research requirement which spans in three dimensions: moving/not moving, positive/negative, landscape/people  <br>
-                        4. Conducted human experimental design using Qualtrics <br>
-                        5. Designed research poster to recruit participants from home and aboard <br>
-                        6. Finished the collection of behavioral data of 50 participants independently <br>
-                        7. Conducted qualitative coding to rate the degree of self-reflection/ introspective behavior of subjects <br>
-                        8. Conducted data wrangling using Excel and SPSS <br>
-                        9. Used SPSS to carry multinominal logistic regression, multiple linear regression, multi-level logistic modeling for preliminary data analysis <br>
-                        10. Used SPSS to carry chi-square test of independence to test the association between the feeling of being moved and type of introspection and accomplished preliminary data visualization
-                    </p>
-
-                    <div class="sub-title lead3">My Skills</div>
-                    <p class="lead">
-                        Empirical Aesthetics, Qualtrics, Qualitative Research Methods, SPSS
-                    </p>
-
-                    <div class="sub-title lead3">Collaborator</div>
-                    <p class="lead">
-                        Ellen Winner
-                    </p>
-
-                     <p><a class="btn btn-embossed btn-primary" href="#" role="button">View Details</a> 
-                     <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p>
-                </div>   
-            </div>
-        </div>
-        <!-- /.container -->
-    </div>
-
-    <div id ="useit" class="content-section-b">
- 
-        <div class="container">
-            
-            <div class="row">
-            
-                <div class="col-sm-6 pull-right wow fadeInRightBig">
-                    <img class="img-responsive " src="Figures/Research1.webp" alt="">
-                </div>
-                
-
-                <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
-                    <h3 class="section-heading">Visual-based Neurofeedback for Group Positive Psychotherapy in the Virtual Natural Environment</h3>
-                    <div class="sub-title lead3">Project Description</div>
-                    <p class="lead">
-                        Predictions are constantly generated from diverse sources to optimize cognitive functions in the ever-changing environment. 
-                        However, the neural origin and generation process of top-down induced prediction remain elusive. 
-                        We hypothesized that motor-based and memory-based predictions are mediated by distinct feedback networks from motor and memory systems to the sensory cortices.
-                    </p>
-
-                    <div class="sub-title lead3">My Contribution</div>
-                    <p class="lead">
-                        Predictions are constantly generated from diverse sources to optimize cognitive functions in the ever-changing environment. 
-                        However, the neural origin and generation process of top-down induced prediction remain elusive. 
-                        We hypothesized that motor-based and memory-based predictions are mediated by distinct feedback networks from motor and memory systems to the sensory cortices.
-                    </p>
-
-                    <div class="sub-title lead3">My Skills</div>
-                    <p class="lead">
-                        xxx
-                    </p>
-
-                    <div class="sub-title lead3">Collaborator</div>
-                    <p class="lead">
-                        xxx
-                    </p>
-
-                     <p><a class="btn btn-embossed btn-primary" href="#" role="button">View Details</a> 
-                     <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p>
-                </div>   
-            </div>
-        </div>
-        <!-- /.container -->
-    </div>
-
-    <div id ="useit" class="content-section-a">
- 
-        <div class="container">
-            
-            <div class="row">
-            
-                <div class="col-sm-6 pull-right wow fadeInRightBig">
-                    <img class="img-responsive " src="Figures/Research1.webp" alt="">
-                </div>
-                
-
-                <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
-                    <h3 class="section-heading">PERMA theory-based Emotional Speech Recognition with Self-Supervised Learning</h3>
-                    <div class="sub-title lead3">Project Description</div>
-                    <p class="lead">
-                        xxx
-                    </p>
-
-                    <div class="sub-title lead3">My Contribution</div>
-                    <p class="lead">
-                        xxx
-                    </p>
-
-                    <div class="sub-title lead3">My Skills</div>
-                    <p class="lead">
-                        xxx
-                    </p>
-
-                    <div class="sub-title lead3">Collaborator</div>
-                    <p class="lead">
-                        Wonder Technology, Dan Zhang
-                    </p>
-
-                     <p><a class="btn btn-embossed btn-primary" href="#" role="button">View Details</a> 
-                     <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p>
-                </div>   
-            </div>
-        </div>
-        <!-- /.container -->
-    </div>
-
-    <div id ="useit" class="content-section-b">
- 
-        <div class="container">
-            
-            <div class="row">
-            
-                <div class="col-sm-6 pull-right wow fadeInRightBig">
-                    <img class="img-responsive " src="Figures/Research1.webp" alt="">
-                </div>
-                
-
-                <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
-                    <h3 class="section-heading">Real-time Inter-Brain Synchrony Visualization through AI-Generated Visual Art</h3>
-                    <div class="sub-title lead3">Project Description</div>
-                    <p class="lead">
-                        xxx
-                    </p>
-
-                    <div class="sub-title lead3">My Contribution</div>
-                    <p class="lead">
-                        xxx
-                    </p>
-
-                    <div class="sub-title lead3">My Skills</div>
-                    <p class="lead">
-                        xxx
-                    </p>
-
-                    <div class="sub-title lead3">Collaborator</div>
-                    <p class="lead">
-                        Jiayuan Peng, Dan Zhang
-                    </p>
-
-                     <p><a class="btn btn-embossed btn-primary" href="#" role="button">View Details</a> 
-                     <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p>
-                </div>   
-            </div>
-        </div>
-        <!-- /.container -->
-    </div>
-    
-    <div id ="useit" class="content-section-a">
- 
-        <div class="container">
-            
-            <div class="row">
-            
-                <div class="col-sm-6 pull-right wow fadeInRightBig">
-                    <img class="img-responsive " src="Figures/Research1.webp" alt="">
-                </div>
-                
-
-                <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
-                    <h3 class="section-heading">Adversarial Games based on Psychological Flow through Canopy Digital Artworks</h3>
-                    <div class="sub-title lead3">Project Description</div>
-                    <p class="lead">
-                        xxx
-                    </p>
-
-                    <div class="sub-title lead3">My Contribution</div>
-                    <p class="lead">
-                        xxx
-                    </p>
-
-                    <div class="sub-title lead3">My Skills</div>
-                    <p class="lead">
-                        xxx
-                    </p>
-
-                    <div class="sub-title lead3">Collaborator</div>
-                    <p class="lead">
-                        Wen Xiu, Dan Zhang
-                    </p>
-
-                     <p><a class="btn btn-embossed btn-primary" href="#" role="button">View Details</a> 
-                     <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p>
-                </div>   
-            </div>
-        </div>
-        <!-- /.container -->
-    </div>
 
      <!-- Screenshot -->
      <div id="screen" class="content-section-b">
